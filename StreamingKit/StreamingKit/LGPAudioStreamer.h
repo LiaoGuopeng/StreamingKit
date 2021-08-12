@@ -76,6 +76,8 @@ typedef NS_ENUM(NSInteger, LGPAudioStreamerErrorCode)
 
 - (void)seekToTime:(double)value;
 
+- (nullable NSURL *)currentlyPlayingURL;
+
 @end
 
 NS_ASSUME_NONNULL_END

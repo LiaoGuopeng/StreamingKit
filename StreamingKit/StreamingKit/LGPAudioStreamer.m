@@ -119,6 +119,10 @@
     }
 }
 
+- (nullable NSURL *)currentlyPlayingURL{
+    return (NSURL *)self.audioStreamer.currentlyPlayingQueueItemId;
+}
+
 #pragma mark - STKAudioPlayerDelegate
 - (void)audioPlayer:(nonnull STKAudioPlayer *)audioStreamer didFinishBufferingSourceWithQueueItemId:(nonnull NSObject *)queueItemId {
     if ([self.delegate respondsToSelector:@selector(audioStreamer:didFinishBufferingSourceWithURL:)]) {
