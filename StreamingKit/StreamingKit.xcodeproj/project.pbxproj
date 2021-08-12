@@ -19,6 +19,8 @@
 		5B949CD71A1140E4005675A0 /* STKHTTPDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E7C4FB188D5E550010896F /* STKHTTPDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B949CD81A1140E4005675A0 /* STKLocalFileDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E7C4FD188D5E550010896F /* STKLocalFileDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B949CD91A1140E4005675A0 /* STKQueueEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BF65D0189A6582004DD08C /* STKQueueEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88F5F96B26C4B805006689C2 /* LGPAudioStreamer.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F5F96726C4B804006689C2 /* LGPAudioStreamer.h */; };
+		88F5F96C26C4B805006689C2 /* LGPAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5F96A26C4B804006689C2 /* LGPAudioStreamer.m */; };
 		A1A4996B189E744400E2A2E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A4996A189E744400E2A2E2 /* Cocoa.framework */; };
 		A1A49975189E744500E2A2E2 /* StreamingKitMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A49974189E744500E2A2E2 /* StreamingKitMac.m */; };
 		A1A4997B189E744500E2A2E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E7C4D9188D57F60010896F /* XCTest.framework */; };
@@ -97,6 +99,8 @@
 /* Begin PBXFileReference section */
 		40B6239222423B1E005D725D /* STKMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKMacro.h; sourceTree = "<group>"; };
 		40B6239722423F28005D725D /* STKSpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKSpinLock.h; sourceTree = "<group>"; };
+		88F5F96726C4B804006689C2 /* LGPAudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPAudioStreamer.h; sourceTree = "<group>"; };
+		88F5F96A26C4B804006689C2 /* LGPAudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPAudioStreamer.m; sourceTree = "<group>"; };
 		A1A49969189E744400E2A2E2 /* libStreamingKitMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamingKitMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A4996A189E744400E2A2E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		A1A4996D189E744500E2A2E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -280,6 +284,8 @@
 				A1BF65D4189A65C6004DD08C /* NSMutableArray+STKAudioPlayer.m */,
 				A1E7C4F1188D5E550010896F /* STKAudioPlayer.h */,
 				A1E7C4F2188D5E550010896F /* STKAudioPlayer.m */,
+				88F5F96726C4B804006689C2 /* LGPAudioStreamer.h */,
+				88F5F96A26C4B804006689C2 /* LGPAudioStreamer.m */,
 				A1E7C4F3188D5E550010896F /* STKAutoRecoveringHTTPDataSource.h */,
 				A1E7C4F4188D5E550010896F /* STKAutoRecoveringHTTPDataSource.m */,
 				A1E7C4F5188D5E550010896F /* STKCoreFoundationDataSource.h */,
@@ -335,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B6239822423F28005D725D /* STKSpinLock.h in Headers */,
+				88F5F96B26C4B805006689C2 /* LGPAudioStreamer.h in Headers */,
 				5B949CD21A1140E4005675A0 /* STKAudioPlayer.h in Headers */,
 				5B949CD31A1140E4005675A0 /* STKAutoRecoveringHTTPDataSource.h in Headers */,
 				5B949CD41A1140E4005675A0 /* STKCoreFoundationDataSource.h in Headers */,
@@ -445,6 +452,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A1E7C4BF188D57F50010896F;
@@ -535,6 +543,7 @@
 				A1E7C501188D5E550010896F /* STKCoreFoundationDataSource.m in Sources */,
 				A1E7C4FF188D5E550010896F /* STKAudioPlayer.m in Sources */,
 				A1E7C505188D5E550010896F /* STKLocalFileDataSource.m in Sources */,
+				88F5F96C26C4B805006689C2 /* LGPAudioStreamer.m in Sources */,
 				A1BF65D2189A6582004DD08C /* STKQueueEntry.m in Sources */,
 				A1E7C504188D5E550010896F /* STKHTTPDataSource.m in Sources */,
 				A1E7C503188D5E550010896F /* STKDataSourceWrapper.m in Sources */,
