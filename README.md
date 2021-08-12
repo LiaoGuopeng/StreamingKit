@@ -1,5 +1,8 @@
 ## StreamingKit
 
+添加了LGPAudioStreamer 使用简单方便
+
+
 StreamingKit (formally Audjustable) is an audio playback and streaming library for iOS and Mac OSX.  StreamingKit uses CoreAudio to decompress and playback audio (using hardware or software codecs) whilst providing a clean and simple object-oriented API.
 
 The primary motivation of this project was to decouple the input data sources from the actual player logic in order to allow advanced customizable input handling such as HTTP progressive download based streaming, encryption/decryption, auto-recovery, dynamic-buffering. StreamingKit is the only streaming and playback library that supports dead-easy [gapless playback](https://github.com/tumtumtum/StreamingKit/wiki/Gapless-playback) between audio files of differing formats.
